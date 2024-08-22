@@ -19,3 +19,6 @@ ifeq ($(strip $(TARGET_PREBUILT_BCR)),true)
 PRODUCT_PACKAGES += \
     Bcr
 endif
+
+# Themed Icons
+$(call inherit-product, vendor/google/overlays/ThemeIcons/config.mk)
